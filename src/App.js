@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ThirdComponent, { FirstComponent, SecondComponent, FourthComponent, FifthComponent, SixthComponent } from './Component/Component';
+import ThirdComponent, { FirstComponent, SecondComponent, FourthComponent, FifthComponent, SixthComponent, SeventhComponent } from './Component/Component';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Hello</h1>  
+      {/* <h1>Hello</h1>  
       <h2>Christophe</h2> 
       <FirstComponent></FirstComponent> 
       <FirstComponent /> 
@@ -16,7 +16,8 @@ function App() {
       <FifthComponent message ={"ceci est un mon cinquième composant"}></FifthComponent>
       <SixthComponent>
         <div>Et enfin mon sixième composant</div>
-      </SixthComponent>
+      </SixthComponent> */}
+      <SeventhComponent></SeventhComponent>
       </header>
     </div>
   );

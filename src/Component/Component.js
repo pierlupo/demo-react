@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "./component.css";
 
 //la bonne pratique est de nommer les fonctions en PascalCase:
 export function FirstComponent(){
@@ -61,4 +62,25 @@ export function SixthComponent(props){
             <h1>{props.children}</h1>
         </div>
     )
+}
+
+export class SeventhComponent extends Component {
+    constructor(props){
+        super(props)
+        this.state = {message : ["Bonjour","merci","au revoir"]}
+    }
+
+    render(){
+        return (
+            <div>
+            <h2> le septième component React avec une copie du state via le .map() </h2>
+            {this.state.message.map((m,i) => (<EighthComponent key={i} message={m}></EighthComponent>))}
+            </div>
+        )
+    }
+}
+
+function EighthComponent(props) {
+
+    return ( <h2 className = "component"> {props.message} </h2> )
 }
